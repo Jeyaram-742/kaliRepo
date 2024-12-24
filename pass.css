@@ -1,0 +1,24 @@
+.invalid{
+    color: red;
+}
+
+.invalid:before{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    content: "❌";
+}
+
+.valid{
+    color: green;
+}
+
+.valid:before{
+    position: relative;
+    margin-left: 30px;
+    padding-right: 20px;
+    content: "✔";
+}
+.message{
+    display: none;
+}
