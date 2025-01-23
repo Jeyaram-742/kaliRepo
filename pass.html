@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+    <link rel="stylesheet" href="pass.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <section id="home" class="home">
+        <nav class="navbar navbar-expand-lg bg-body-secondary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-expanded="false" aria-controls="navbarTogglerDemo01" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand fs-2 fw-bolder" href="#" >Brand</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        </nav>
+
+
+        <div class="container">
+            <div class="row ">
+            <div class="col-md-5 border rounded mt-5 bg-light">
+                <form >
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" pattern="(?=.*\d)(?=.*[@#$&]).{8,20}">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mb-5"> submit</button>
+                </form>
+
+             </div>
+
+             <div class="col-md-6 mt-5 ms-5 message" id="message">
+                <h3 class="pb-4">password must Contain the Following :</h3>
+                <p id="letter" class="invalid">At Least One LowerCase Letter</p>
+                <p id="capital" class="invalid">At Least One Capital Letter</p>
+                <p id="number" class="invalid">At Least One Number</p>
+                <p id="symbol" class="invalid">At Least One Special Character</p>
+                <p id="lenght" class="invalid">Minimum 8 and Maximum 20</p>
+                
+
+             </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="accordion" class="accordion">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6 py-5"> 
+                <h3 class="text-center"> Accordion</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                                This is First Accordion
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse show" id="collapseOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur soluta corporis molestias expedita doloremque necessitatibus molestiae animi accusamus consequuntur quasi.</strong>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion pt-3" id="accodionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                This is second accordion
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse show" id="collapseTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem recusandae, itaque nam excepturi culpa ea voluptatibus voluptates ducimus odio necessitatibus?</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion pt-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                This is third Question
+                            </button>
+                        </h2>
+                        <div class="accordion-collapse collapse show" id="collapseThree" data-bs-parent="accodionExample">
+                            <div class="accordion-body">
+                                <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus doloremque corrupti laudantium necessitatibus velit provident eligendi atque omnis reiciendis eos.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+
+           
+
+           <!--<div class="col-md-5">
+            <div id="liveAlertPlaceholder"></div>
+                <button type="button" class="btn btn-primary" id="liveAlertBtn">Alert !</button>
+           </div>-->
+           <div class="col-md-5">
+                <h3 class="text-center">Button with Badge</h3>
+                <button type="button" class="btn btn-primary position-relative">
+                      Inbox
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+</span>
+               </button>
+
+               <button type="button" class="btn btn-warning position-absolute ms-5">
+                Inbox
+                <span class="position-absolute top-0 start-100 badge translate-middle rounded-pill bg-dark">99+</span>
+               </button>
+
+               <h3 class="mt-5">BreadCrumb</h3>
+               <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item" ><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About us</li>
+
+                </ol>
+               </nav>
+
+               <nav aria-lable="braedcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">About</a></li>
+                    <li class="breadcrumb-item active " aria-current="page">Contact</li>
+                    
+                </ol>
+               </nav>
+
+               <button type="button" class="btn btn-outline-danger">Submit</button>
+           </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Button Group</h3>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example"> 
+                        <button type="button" class="btn btn-outline-primary">left</button>
+                        <button type="button" class="btn btn-outline-primary">middle</button>
+                        <button type="button" class="btn btn-outline-primary">Right</button>
+                    </div>
+
+                    <div class="btn-group px-5" role="group" aria-label="firstgroup"> 
+                        <button type="button" class="btn btn-primary">1</button>
+                        <button type="button" class="btn btn-primary">2</button>
+                        <button type="button" class="btn btn-primary">3</button>
+                        <button type="button" class="btn btn-primary">4</button>
+                        <button type="button" class="btn btn-primary">5</button>
+                    </div>
+                </div>
+
+                
+                <div class="card" style="width: 18rem; height: 450px;">
+                    <img src="./images/m1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum.</p>
+                        <a href="#" class="btn btn-dark">Shop</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee</h5>
+                        <h3 class="card-subtitle">Choose</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rerum.</p>
+                        <a href="#" class="card-link">Shop</a>
+                        <a href="#" class="card-link">Add to Cart</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <section>
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <h3>Collapse</h3>
+                        <p>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample">
+                                Terms&condition
+                            </button>
+                        </p>
+                            <div style="min-height: 120px;">
+                                <div class="collapse collapse-horizantal" id="collapseWidthExample">
+                                    <div class="card card-body" style="width: 300px;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea laudantium sequi dicta exercitationem quisquam autem!
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categaories
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#">First</a></li>
+                                <li class="dropdown-item"><a href="#">Second</a></li>
+                                <li class="dropdown-item"><a href="#">Third</a></li>
+                                
+                            </ul>
+                        </div>   
+
+                        <ol class="list-group list-group-numbered py-5">
+                            <li class="list-group-item active">Lorem ipsum dolor sit amet.</li>
+                            <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                            <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                            <li class="list-group-item list-group-item-secondary">Lorem ipsum dolor sit amet.</li>
+                            <li class="list-group-item list-group-item-light">Lorem ipsum dolor sit amet.</li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Lorem ipsum dolor sit amet.
+                                <span class="badge text-bg-danger rounded-pill">10</span>
+                            </li>
+                        </ol>
+                       
+                    </div>
+
+                    <div class="col-md-5">
+                        <h3>offCanvas</h3>
+                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample" role="button">
+                            Canvas
+                        </a>
+
+                        <div class="offcanvas offcanvas-start" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExamleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title"> Welcome</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officiis quae libero commodi magnam quia!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--for off canvas right-->
+                        
+                        
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"  aria-controls="offcanvasRight" data-bs-target="#offcanvasRight">
+                            RightCanvas
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title"> Welcome</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officiis quae libero commodi magnam quia!
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"  aria-controls="offcanvasBottom" data-bs-target="#offcanvasBottom">
+                            CanvasBottom
+                        </button>
+
+                        <div class="offcanvas offcanvas-Bottom" id="offcanvasBottom" tabindex="-1" aria-labelledby="offcanvasBottomLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title"> Welcome</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officiis quae libero commodi magnam quia!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--page Navigation-->
+                        <div class="pagenav mt-5">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+
+                            </ul>
+                        </nav>
+                      </div>
+
+                      <div class="pagenav mt-5">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a href="#" class="page-link" aria-label="previous" aria-hidden="true">&laquo;</a></li>
+                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                <li class="page-item"><a href="#" class="page-link" aria-label="next" aria-hidden="true">&raquo;</a></li>
+
+                            </ul>
+                        </nav>
+                      </div>
+
+                      <button class="btn btn-secondary" type="button" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Are you Going to be Click"> Popover</button>
+                    </div>
+
+                    <div class="spinners">
+                        <div class="spinner-border" role="status"></div>
+                        <div class="spinner-border text-primary ms-2" role="status"></div>
+                        <div class="spinner-grow text-danger" role="status"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    
+    <script src="pass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

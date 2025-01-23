@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} 
+.cnav{
+    background-color: rgb(190, 124, 77);
+}
+#logo img{
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 40px;
+  }
+  .nav-item .nav-link{
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  .nav-item .nav-link:hover{
+    background: #f7f5f2;
+    border-radius: 5px;
+    color: black;
+  }
+  .sbtn{
+    margin-left: -30px;
+  }
+.home{
+  width: 100%;
+  height:100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./images/bc3.png);
+  background-position: 80%;
+  background-size: cover;
+  }
+.hometxt{
+  padding-top: 20%;
+  font-size: 58px;
+  font-family: "Playfair Display", serif;
+ 
+}
+.head{
+  font-family: "Oleo Script", system-ui;
+}
+.shop-btn:hover{
+  cursor: pointer;
+  background-color: rgb(190, 124, 77);
+  color: black;
+
+}
+.learn-btn{
+  background-color: rgb(190, 124, 77);
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+} 
+.us{
+  color:rgb(190, 124, 77) ;
+  padding-left: 5px;
+}
+.top{
+  margin-top: 40px;
+}
+
+.hmenu{
+  color:rgb(190, 124, 77) ;
+  border-bottom: 2px solid #b2744c
+}
+.basket{
+  margin-left: 100px;
+}
+@media only screen and (max-width:767px){
+  .rs{
+    margin-left: 55px;
+  }
+
+.product .rsp{
+  margin-left: 30%;
+}
+
+}
+
+
+.gall {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.gall .carousel {
+  inset: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.gall .carousel-item {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition-duration: 0.4s;
+}
+
+.gall .carousel-item img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.gall .carousel-item::before {
+  content: "";
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.gall .carousel-control-prev {
+  justify-content: start;
+}
+
+@media (min-width: 640px) {
+  .gall .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+.gall .carousel-control-next {
+  justify-content: end;
+}
+
+@media (min-width: 640px) {
+  .gall .carousel-control-next {
+    padding-right: 15px;
+  }
+}
+
+.gall .carousel-control-next-icon,
+.gall .carousel-control-prev-icon {
+  background: none;
+  font-size: 26px;
+  line-height: 0;
+  border-radius: 50px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gall .carousel-control-prev,
+.gall .carousel-control-next {
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.gall .carousel-control-prev:focus,
+.gall .carousel-control-next:focus {
+  opacity: 0.5;
+}
+
+.gall .carousel-control-prev:hover,
+.gall .carousel-control-next:hover {
+  opacity: 0.9;
+}
+
+.gall .gallery{
+  color: white;
+  z-index: 5;
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+}
+
+.form input{
+  width: 450px;
+  border: none;
+  border-bottom: 2px solid rgb(190, 124, 77);
+}
+
+@media only screen and (max-width:767px){
+  .form input{
+    width: 100%;
+  }
+  .rs{
+    margin-left: 20%;
+  }
+  .rsp{
+    margin-left: 30%;
+  }
+}
+.mbtn{
+  background-color:rgb(190, 124, 77) ;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.mbtn:hover{
+  background-color: transparent;
+  color: black;
+  border: 2px solid rgb(190, 124, 77);
+  cursor: pointer;
+}
+.contact{
+  box-shadow: 30px 15px 15px rgba(0,0,0,0.15);
+}
+.mail{
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.colour{
+  background-color: rgb(190, 124, 77);
+  height: 100%;
+  width: 100%;
+}
+.foot{
+  background-color: rgb(190, 124, 77)
+}
+.fimg{
+  margin-left: 30%;
+}
+
+@keyframes fadeInLeft {
+  0% {
+      transform: translateX(-60px);
+      opacity: 0.5;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+
+@keyframes fadeInRight {
+  0% {
+      transform: translateX(60px);
+      opacity: 0.5;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.about-img, .about-text {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about-img.active {
+  animation: fadeInLeft 1s ease forwards;
+ 
+}
+
+.about-text.active {
+  animation: fadeInRight 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+      transform: translateY(90px);
+      opacity: 0.5;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+.tc {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tc.active {
+  animation: fadeInUp 2s ease forwards;
+}
+
+
+.video {
+  position: relative; 
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 1; 
+}
+
+.over-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: white;
+  font-size: 1.5rem; 
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+.over-text1{
+  font-family: "Oleo Script", system-ui;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  color: white;
+  font-size: 3.5rem; 
+  text-align: center;
+
+}
+.shop-btn{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+
+}
+@media only screen and (max-width:767px){
+  .over-text1{
+      top: 30%;
+      font-size: 2rem; 
+
+  }
+  .over-text{
+    top: 45%;
+    width: 90%;
+  }
+  .shop-btn{
+    top: 65%;
+  }
+
+}
